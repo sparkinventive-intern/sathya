@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  min-height: 100vh;
+  color: #333;
+}
+
+/* HERO SECTION */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.hero button {
+  padding: 12px 25px;
+  background: white;
+  color: #0077ff;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  transform: scale(1.05);
+}
+
+/* FEATURES */
+.features {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.features h2 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.feature-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.feature {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  width: 220px;
+  border-radius: 15px;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+/* TODO CONTAINER */
+.container {
+  width: 400px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+}
+
+.container h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* INPUT */
+.input-container {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+/* BUTTONS */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* ADD BUTTON */
+.input-container button {
+  background: #00c853;
+}
+
+/* TASK LIST */
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 12px;
+  animation: fadeIn 0.3s ease;
+}
+
+.list-item span {
+  cursor: pointer;
+  font-size: 17px;
+}
+
+/* ACTION BUTTONS */
+.list-item button:first-child {
+  background: #0077ff;
+}
+
+.list-item button:last-child {
+  background: #ff3b3b;
+}
+
+/* CLEAR BUTTON */
+.clear-btn {
+  width: 100%;
+  margin-top: 20px;
+  background: black;
+}
+
+/* TASK COUNT */
+.task-count {
+  text-align: center;
+  margin-top: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
